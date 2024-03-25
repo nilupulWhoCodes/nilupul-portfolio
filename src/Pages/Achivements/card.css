@@ -1,0 +1,19 @@
+.card:hover {
+    transform: rotateY(-180deg);
+}
+.card {
+    transition: transform 1000ms;
+    transform-style: preserve-3d;
+    position: relative;
+    cursor: pointer;
+}
+
+.card-front,
+.card-back {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    position: absolute;
+}
+.card-back {
+    transform: rotateY(180deg);
+}
