@@ -10,8 +10,8 @@ export default function About() {
       direction="column"
       sx={{
         height: { xs: 'auto', md: 'auto', lg: 'auto' },
-        marginTop: { xs: 3, md: 8 },
-        
+        marginTop: { xs: 3, md: 10 },
+
       }}
 
     >
@@ -20,17 +20,20 @@ export default function About() {
       </Typography>
 
       <Typography variant="body1" fontFamily="Arial" color="#7789AB"  >
-        I am a creative Software Developer who has experience in technologies such as Data Science & ML and Cloud Computing. I am a highly coordinated, committed and diplomatic
-        software engineer with a defined capacity to operate and execute any specific role on schedule.
+        I am a Computer Science Undergraduate student at IIT and have gained experience in web designing,
+        including the application of frameworks like React,
+        through coursework and personal projects.
 
       </Typography>
       <Typography variant="body1" fontFamily="Arial" color="#7789AB" >
-        I am able to communicate with a vast variety of individuals easily, with outstanding organizational skills. I see that I will bring my skills and expertise into practice in a full-time role in the industry, which will directly support the activities of the businesses I am involved in.
-        I have the potential to build original conceptions and insights and solve a great many problems, guided by my intuitive and optimistic approach to problem solving. In algorithms as in business scenarios, I am able to apply my problems solving skills.
+        Furthermore, I have a talent for coming up with creative solutions and solving problems,
+        whether it's in algorithms or real-world business situations.
+        I am also good at understanding complex concepts and helping others learn and grow.
+        I am confident in my ability to work well in teams and contribute positively to projects.
       </Typography>
       <Typography variant="body1" fontFamily="Arial" color="#7789AB" >
-        Furthermore, I can easily and effectively understand the intensifying principles and help others to develop with great self encouragement. Therefore, I guess I am able to handle a lot of teams.
-
+        I believe I can apply my skills effectively in a full-time industry role, 
+        contributing to the success of the businesses I work with.
       </Typography>
     </Stack>
   );

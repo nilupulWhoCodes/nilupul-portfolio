@@ -13,9 +13,18 @@ import GlowingCursor from '../Components/GlowingCursor';
 
 const Home = () => {
 
+  const handleDownload = () => {
+    
+    const fileUrl = '/CV - Nilupul Samarathunga.pdf';
+    const anchor = document.createElement('a');
+    anchor.href = fileUrl;
+    anchor.download = 'CV - Nilupul Samarathunga.pdf';
+    anchor.click();
+  };
+
   return (
-    <Grid container direction="row" sx={{ backgroundColor:"transparent"}}>
-      
+    <Grid container direction="row" sx={{ backgroundColor: "transparent" }}>
+
       <Grid item xs={12} md={6} lg={6} sx={{
         position: { md: 'fixed', lg: 'fixed' },
         top: { md: 95, lg: 95 },
@@ -67,21 +76,53 @@ const Home = () => {
               component="label"
               variant="contained"
               endIcon={<DownloadIcon />}
+              onClick={handleDownload}
             >
               Resume
             </Button>
           </Stack>
-          <Stack direction="row" color="#7789AB" spacing={2} height="12vh" sx={{
-            alignItems: { xs: 'center', md: 'flex-end' }, '& > *:hover': {
-              color: '#C6D2ED',
-              cursor: 'pointer'
-            }
-          }}>
-            <GitHub />
-            <LinkedIn />
-            <Instagram />
-            <Facebook />
-
+          <Stack
+            direction="row"
+            color="#7789AB"
+            spacing={2}
+            height="12vh"
+            sx={{
+              alignItems: { xs: 'center', md: 'flex-end' },
+              '& > a': {
+                textDecoration: 'none',
+                color: '#7789AB',
+                '&:hover': {
+                  color: '#C6D2ED',
+                  cursor: 'pointer'
+                }
+              }
+            }}
+          >
+            <a
+              target='_blank'
+              href="https://github.com/nilupulWhoCodes"
+              rel="noopener noreferrer"
+            >
+              <GitHub />
+            </a>
+            <a
+              target='_blank'
+              href="https://www.linkedin.com/in/nilupul-samarathunga"
+            >
+              <LinkedIn />
+            </a>
+            <a
+              target='_blank'
+              href="https://www.instagram.com/_niluwa.ns_/?hl=en"
+            >
+              <Instagram />
+            </a>
+            <a
+              target='_blank'
+              href="https://web.facebook.com/nilupul.suramya.7"
+            >
+              <Facebook />
+            </a>
           </Stack>
         </Stack>
 
@@ -89,12 +130,12 @@ const Home = () => {
       <Grid item xs={12} md={6} lg={6} sm={12} sx={{ mt: { md: 0 }, ml: { md: '50%' }, }}>
         <Stack direction="column" gap={18}>
           <About />
-          <TimelineExpAndEdu />  
-          <Certificates />  
-          <Projects />  
+          <TimelineExpAndEdu />
+          <Certificates />
+          <Projects />
         </Stack>
       </Grid>
-    </Grid>
+    </Grid >
   );
 };
 
