@@ -9,7 +9,8 @@ import TimelineExpAndEdu from './TimelineExpAndEdu';
 import Certificates from './Certificates';
 import Projects from './Projects';
 import GlowingCursor from '../Components/GlowingCursor';
-import Contact from "./Contact";
+import Contact from './Contact';
+
 
 const Home = () => {
 

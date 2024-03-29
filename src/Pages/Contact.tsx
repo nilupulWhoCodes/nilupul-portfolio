@@ -142,11 +142,6 @@ export default function Contact() {
     }
   };
 
-
-
-
-
-
   return (
     <Stack spacing={2}>
       <Snackbar open={toastOpen} autoHideDuration={6000} onClose={() => setToastOpen(false)}>
