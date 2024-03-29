@@ -8,7 +8,6 @@ import About from './About';
 import TimelineExpAndEdu from './TimelineExpAndEdu';
 import Certificates from './Certificates';
 import Projects from './Projects';
-import GlowingCursor from '../Components/GlowingCursor';
 import Contact from './Contact';
 
 
@@ -32,7 +31,7 @@ const Home = () => {
         left: { md: 75, lg: 75 },
         height: { xs: '60vh', md: 'auto', lg: 'auto' },
         overflowY: { md: 'hidden', lg: 'hidden' },
-        width: { xs: '100%', md: '50%', lg: '50%' },
+        width: { xs: '100%', md: '42%', lg: '42%' },
       }}>
         <Stack
           gap={2}
@@ -67,7 +66,7 @@ const Home = () => {
               }
             }}
             fontFamily="Arial" color="#7789AB" width="100%">
-            I build pixel-perfect, engaging, and accessible digital experiences.
+            I build user friendly, engaging, and accessible digital experiences.
           </Typography>
           <Stack sx={{ height: { md: "10vh", xs: "auto" } }} width={"100%"} justifyContent={"center"}>
             <Button
@@ -109,18 +108,21 @@ const Home = () => {
             <a
               target='_blank'
               href="https://www.linkedin.com/in/nilupul-samarathunga"
+              rel="noreferrer noopener"
             >
               <LinkedIn />
             </a>
             <a
               target='_blank'
               href="https://www.instagram.com/_niluwa.ns_/?hl=en"
+              rel="noreferrer noopener"
             >
               <Instagram />
             </a>
             <a
               target='_blank'
               href="https://web.facebook.com/nilupul.suramya.7"
+              rel="noreferrer noopener"
             >
               <Facebook />
             </a>

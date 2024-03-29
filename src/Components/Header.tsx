@@ -1,7 +1,6 @@
 import * as React from "react";
 import Box from "@mui/material/Box";
-import Tab from "@mui/material/Tab";
-import { TabContext, TabList, TabPanel } from "@mui/lab";
+import { TabContext, TabPanel } from "@mui/lab";
 import Home from "../Pages/Home";
 import About from "../Pages/About";
 import Skills from "../Pages/Skills";
@@ -15,9 +14,9 @@ interface HeaderProps {
 export default function Header({ headerLinks }: HeaderProps) {
   const [value, setValue] = React.useState(Object.values(headerLinks)[0]);
 
-  const handleChange = (event: React.SyntheticEvent, newValue: string) => {
-    setValue(newValue);
-  };
+  // const handleChange = (event: React.SyntheticEvent, newValue: string) => {
+  //   setValue(newValue);
+  // };
 
   return (
     <Box sx={{ width: "100%", typography: "body1" }}>
