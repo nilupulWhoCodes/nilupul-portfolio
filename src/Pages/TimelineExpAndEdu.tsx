@@ -12,7 +12,6 @@ import TimelineOppositeContent, {
 import { Stack, Typography, Card } from '@mui/material';
 import SchoolIcon from '@mui/icons-material/School';
 import SuitcaseIcon from '@mui/icons-material/Work';
-import CertificateIcon from '@mui/icons-material/WorkspacePremium';
 
 export default function TimelineExpAndEdu() {
     return (
@@ -92,7 +91,7 @@ export default function TimelineExpAndEdu() {
                                         Primary and Secondary Education
                                     </Typography>
                                     <Typography fontSize={"10pt"} fontWeight={"bold"} fontFamily={"arial"} color={"#314162"}>
-                                        2006 - 2021
+                                        2008 - 2021
                                     </Typography>
                                     <Typography
                                         fontSize="10pt"
