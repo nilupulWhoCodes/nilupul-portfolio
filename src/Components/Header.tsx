@@ -3,7 +3,6 @@ import Box from "@mui/material/Box";
 import Tab from "@mui/material/Tab";
 import { TabContext, TabList, TabPanel } from "@mui/lab";
 import Home from "../Pages/Home";
-import Achievements from "../Pages/Achivements/Achievements";
 import About from "../Pages/About";
 import Skills from "../Pages/Skills";
 import Contact from "../Pages/Contact";
@@ -63,9 +62,7 @@ export default function Header({ headerLinks }: HeaderProps) {
         <TabPanel value="projects">
           <Projects />
         </TabPanel>
-        <TabPanel value="achievements">
-          <Achievements />
-        </TabPanel>
+        
       </TabContext>
     </Box>
   );
